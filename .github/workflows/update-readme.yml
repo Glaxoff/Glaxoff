@@ -35,7 +35,7 @@ jobs:
         let content = '# My Projects\n\nHere is a list of all the websites I have created:\n\n';
 
         sites.forEach(site => {
-          content += `- **[${site.name}](${site.url})**: ${site.description}\n\n`;
+          content += '- **[' + site.name + '](' + site.url + ')**: ' + site.description + '\n\n';
         });
 
         fs.writeFileSync('README.md', content);
