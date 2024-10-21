@@ -1,16 +1,13 @@
-## Hi there 👋
+# 𝑭𝒍𝒚𝒏
 
-<!--
-**Glaxoff/Glaxoff** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Hi there! 👋
 
-Here are some ideas to get you started:
+I'm **𝑭𝒍𝒚𝒏**, a young developer who loves coding and learning new things. I'm currently building my skills and exploring different technologies. Join me on my journey as I grow in the world of programming!
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 🌱 I’m currently learning and improving my skills in development.
+- 💬 Ask me about anything in my [Discord server](https://discord.gg/jY9dzGbRdy)!
+- 🤝 Always open to collaborating on fun projects.
+- ⚡ Fun fact: I’m passionate about coding and eager to learn more every day.
+
+Thanks for visiting my GitHub! Let's build something amazing together.
+
