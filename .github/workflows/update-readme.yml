@@ -1,0 +1,51 @@
+name: Update README with My Sites
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Checkout the repository
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # 2. Set up Node.js environment
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    # 3. Install necessary packages
+    - name: Install dependencies
+      run: npm install fs
+
+    # 4. Update README.md with the list of sites
+    - name: Update README.md
+      run: |
+        node -e "
+        const fs = require('fs');
+        const sites = require('./sites.json');
+
+        let content = '# My Projects\n\nHere is a list of all the websites I have created:\n\n';
+
+        sites.forEach(site => {
+          content += `- **[${site.name}](${site.url})**: ${site.description}\n\n`;
+        });
+
+        fs.writeFileSync('README.md', content);
+        "
+
+    # 5. Commit the updated README.md
+    - name: Commit changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "GitHub Actions"
+        git add README.md
+        git commit -m "Updated README.md with the list of sites"
+        git push
